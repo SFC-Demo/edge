@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: upload-video-app
+    chain: video-streaming-chain
+    service: upload-video-app-service
+  name: upload-video-service
+  namespace: default
+spec:
+  ports:
+  - name: http
+    port: 5000
+    protocol: TCP
+    targetPort: 0
+  selector:
+    app: upload-video-app
+status:
+  loadBalancer: {}
