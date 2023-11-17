@@ -2,14 +2,13 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   creationTimestamp: null
+  labels:
+    app: ""
   name: upload-video-app
   namespace: default
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      app: upload-video-app
-      version: v1
+  selector: {}
   strategy: {}
   template:
     metadata:
