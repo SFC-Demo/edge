@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: ""
+    app: process-video-app
   name: process-video-app
   namespace: default
 spec:
