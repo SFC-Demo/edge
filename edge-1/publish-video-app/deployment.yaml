@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: ""
+    app: publish-video-app
   name: publish-video-app
   namespace: default
 spec:
