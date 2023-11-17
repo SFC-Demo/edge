@@ -8,11 +8,17 @@ metadata:
   namespace: default
 spec:
   replicas: 1
-  selector: {}
+  selector:
+    matchLabels:
+      app: process-video-app
+      version: v1
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
+      labels:
+        app: process-video-app
+        version: v1
     spec:
       containers:
       - image: docker.io/istio/examples-helloworld-v2
